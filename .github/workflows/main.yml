@@ -35,8 +35,8 @@ jobs:
         run: npm install
 
       # Step 5: Run Tests (Optional, but recommended)
-      #- name: Run Tests
-       # run: npm test
+      - name: Run Tests
+        run: npm test
 
       # Step 6: Build Application
       - name: Build Application and Run Unit Tests
