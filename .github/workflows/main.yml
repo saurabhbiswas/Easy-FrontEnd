@@ -1,10 +1,13 @@
 name: CI/CD Pipeline
 on:
   push:
-    branches: [develop]
+    branches: [main]
 jobs:
   continuous-integration:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22.x]  # You can specify versions here
     steps:
       # Step 1
       - uses: actions/checkout@v3
@@ -24,5 +27,5 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          SOURCE_DIR: ${{ secrets.SOURCE }}
+          SOURCE_DIR: "build"
           AWS_S3_BUCKET: ${{ secrets.AWS_BUCKET }}
