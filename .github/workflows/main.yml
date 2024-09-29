@@ -41,6 +41,8 @@ jobs:
       # Step 6: Build Application
       - name: Build Application and Run Unit Tests
         run: CI=false npm run build
+        env:
+          REACT_APP_BASE_URL: ${{ secrets.REACT_APP_BASE_URL }}  # Inject the base URL
 
       # Step 7: List build directory contents to verify build
       - name: List build directory contents
