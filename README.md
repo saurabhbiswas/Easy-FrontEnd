@@ -47,7 +47,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.
+Launches the test runner and excutes test cases.
 
 ### `npm run build`
 
@@ -75,7 +75,7 @@ AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY,REACT_APP_BASE_URL,
 
 ### Error handling 
 
-Server side [succes/error] is shown as Notification
+Server side [succes/error] is shown as Notification.
 
 Client side error is shown as inline error.
 
@@ -85,6 +85,14 @@ Aria tags are added at AuthForm.tsx,Notification.tsx.
 
 ### Proctected Routes
 
- path: '/dashboard' is protected so that user without login/signup cannot access it.
+path: '/dashboard' is protected so that user without login/signup cannot access it.
+
+### Responsive UI
+
+tailwind.css classes are sued to make responsive UI.
+
+### useReducer Hook 
+
+it is used to straemline state management.
 
 
