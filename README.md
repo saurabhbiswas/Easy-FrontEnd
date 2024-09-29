@@ -4,7 +4,7 @@
 
 http://mygablubacket.s3-website-ap-southeast-2.amazonaws.com
 
-### its integrated with backend and fully functional.
+### It Is integrated with backend and fully functional.
 Use only http as for https ,we need custom domain purcahse and SSL.[Future consideration]
 
 
@@ -13,7 +13,7 @@ Use only http as for https ,we need custom domain purcahse and SSL.[Future consi
 This project was bootstrapped with Create React App
 
 
-## PreRquisite
+## PreRequisite
 
 Node.js v22.9.0 should be installed
 The backend and mogodb(local/cloud hoisted) should be running.
@@ -75,9 +75,9 @@ AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY,REACT_APP_BASE_URL,
 Server side [succes/error] is shown as Notification
 Client side error is shown as inline error.
 
-### Aria
+### ARIA for accessibility
 
-Aria tags are added at appropriate places.
+Aria tags are added at AuthForm.tsx,Notification.tsx.
 
 ### Proctected Routes
 
