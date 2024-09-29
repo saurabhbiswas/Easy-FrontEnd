@@ -66,7 +66,7 @@ On each push to main,App is deployed in S3 bucket.
 
 ### Passwords and Secrets
 
-Githhub Repository secret is used for deployement.
+Githhub Repository secret is used for deployment.
 
 AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY,REACT_APP_BASE_URL,
 
