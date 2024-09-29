@@ -1,9 +1,10 @@
 # Hoisted APP
 
-#The App is hoisted at 
- http://mygablubacket.s3-website-ap-southeast-2.amazonaws.com
- its integrated with backend and fully functional.
- Use only http as for https ,we need custom domain purcahse and SSL.[Future consideration]
+##The App is hoisted at 
+
+http://mygablubacket.s3-website-ap-southeast-2.amazonaws.com
+its integrated with backend and fully functional.
+Use only http as for https ,we need custom domain purcahse and SSL.[Future consideration]
 
 
 # Getting Started for LOCAL  setup
@@ -11,16 +12,16 @@
 This project was bootstrapped with Create React App
 
 
-##PreRquisite
+## PreRquisite
 
- Node.js v22.9.0 should be installed
- The backend and mogodb(local/cloud hoisted) should be running.
- Refer https://github.com/saurabhbiswas/EasyBackend README for the same.
+Node.js v22.9.0 should be installed
+The backend and mogodb(local/cloud hoisted) should be running.
+Refer https://github.com/saurabhbiswas/EasyBackend README for the same.
 
- ## ENV FILE 
- In .env.development file,point to correct Backend nestjs url
+## ENV FILE 
+In .env.development file,point to correct Backend nestjs url
 
- REACT_APP_BASE_URL=http://localhost:3001
+REACT_APP_BASE_URL=http://localhost:3001
 
 
 ## Install dependencies
@@ -53,9 +54,11 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 
-##App Highlights
+## App Highlights
 
-###CI/CD pipeline 
+
+### CI/CD pipeline 
+
 It is created.[.githhub/workflows/main.yml].
 On each push to main,App is deployed in S3 bucket.
 Githhub Repository secret is used for 
@@ -64,11 +67,13 @@ AWS_REGION
 AWS_SECRET_ACCESS_KEY
 REACT_APP_BASE_URL
 
-###Error handling 
+### Error handling 
+
 Server side [succes/error] is shown as Notification
 Client side error is shown as inline error.
 
-###Aria
+### Aria
+
 Aria tags are added at appropriate places.
 
 
