@@ -45,25 +45,29 @@ The page will reload if you make edits.\
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 
-## App Highlights
+## APP Highlights
 
 
 ### CI/CD pipeline 
 
 It is created.[.githhub/workflows/main.yml].
 On each push to main,App is deployed in S3 bucket.
-Githhub Repository secret is used for 
+
+### Passwords and Secrets
+
+Githhub Repository secret is used for deployement.
+
 AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY,REACT_APP_BASE_URL,
 
 ### Error handling 
@@ -74,5 +78,9 @@ Client side error is shown as inline error.
 ### Aria
 
 Aria tags are added at appropriate places.
+
+### Proctected Routes
+
+ path: '/dashboard' is protected so that user without login/signup cannot access it.
 
 
