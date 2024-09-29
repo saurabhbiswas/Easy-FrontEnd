@@ -46,7 +46,7 @@ const Login: React.FC = () => {
         password={formState.password}
         setPassword={handleFieldChange('password')}
         passwordErrors={formState.passwordErrors}
-        buttonText="Login"
+        buttonText="Signin"
         footerContent={
           <Link
             to="/signup"
