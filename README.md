@@ -16,7 +16,9 @@ This project was bootstrapped with Create React App
 ## PreRequisite
 
 Node.js v22.9.0 should be installed
+
 The backend and mogodb(local/cloud hoisted) should be running.
+
 Refer https://github.com/saurabhbiswas/EasyBackend README for the same.
 
 ## ENV FILE 
@@ -62,6 +64,7 @@ Your app is ready to be deployed!
 ### CI/CD pipeline 
 
 It is created.[.githhub/workflows/main.yml].
+
 On each push to main,App is deployed in S3 bucket.
 
 ### Passwords and Secrets
@@ -73,6 +76,7 @@ AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY,REACT_APP_BASE_URL,
 ### Error handling 
 
 Server side [succes/error] is shown as Notification
+
 Client side error is shown as inline error.
 
 ### ARIA for accessibility
