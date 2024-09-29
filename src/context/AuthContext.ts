@@ -34,7 +34,7 @@ const AuthContext = createContext<{
   dispatch: () => null,
 });
 
-const authReducer = (state: AuthState, action: AuthAction): AuthState => {
+export const authReducer = (state: AuthState, action: AuthAction): AuthState => {
   switch (action.type) {
     case 'START_LOADING':
       return { ...state, isLoading: true, error: null };

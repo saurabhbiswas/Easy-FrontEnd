@@ -20,7 +20,7 @@ const Signup: React.FC = () => {
       await signup(formState.email, formState.password, formState.name);
       navigate('/dashboard', { replace: true });
     } catch (error: any) {
-       console.log("setting server error--login",error);
+       
        let errorMessage = 'Signup failed. Please try again.';
       if (error.response && error.response.data && error.response.data.message) {
         errorMessage = error.response.data.message;
