@@ -3,7 +3,8 @@
 ##The App is hoisted at 
 
 http://mygablubacket.s3-website-ap-southeast-2.amazonaws.com
-its integrated with backend and fully functional.
+
+### its integrated with backend and fully functional.
 Use only http as for https ,we need custom domain purcahse and SSL.[Future consideration]
 
 
@@ -19,6 +20,7 @@ The backend and mogodb(local/cloud hoisted) should be running.
 Refer https://github.com/saurabhbiswas/EasyBackend README for the same.
 
 ## ENV FILE 
+
 In .env.development file,point to correct Backend nestjs url
 
 REACT_APP_BASE_URL=http://localhost:3001
@@ -62,10 +64,7 @@ Your app is ready to be deployed!
 It is created.[.githhub/workflows/main.yml].
 On each push to main,App is deployed in S3 bucket.
 Githhub Repository secret is used for 
-AWS_ACCESS_KEY_ID
-AWS_REGION
-AWS_SECRET_ACCESS_KEY
-REACT_APP_BASE_URL
+AWS_ACCESS_KEY_ID, AWS_REGION, AWS_SECRET_ACCESS_KEY,REACT_APP_BASE_URL,
 
 ### Error handling 
 
