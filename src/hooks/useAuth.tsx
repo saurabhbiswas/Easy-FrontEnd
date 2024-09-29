@@ -3,8 +3,8 @@
 import { useAuthContext } from '../context/AuthContext';
 import axios from '../services/api';
 import { useNavigate } from 'react-router-dom';
-import { useNotification } from '../context/NotificationContext'; // Import the notification hook
-
+import { useNotification } from '../context/NotificationContext'; 
+import { handleAuthError } from '../utils/handleAuthError';
 interface LoginResponse {
   accessToken: string;
   user: {
@@ -44,8 +44,7 @@ const useAuth = () => {
       addNotification('Login successful!', 'success');
     } catch (error) {
       dispatch({ type: 'AUTH_ERROR', payload: 'Invalid credentials' });
-      // Show error notification
-      addNotification('Invalid email or password.', 'error');
+      handleAuthError(error, addNotification);
     }
   };
 
@@ -60,8 +59,7 @@ const useAuth = () => {
       await login(email, password);
     } catch (error) {
       dispatch({ type: 'AUTH_ERROR', payload: 'Signup failed' });
-      // Show error notification
-      addNotification('Signup failed. Please try again.', 'error');
+      handleAuthError(error, addNotification);
     }
   };
 
