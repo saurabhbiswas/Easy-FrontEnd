@@ -1,10 +1,36 @@
-# Getting Started with Create React App
+# Hoisted 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#The App is hoisted at 
+ http://mygablubacket.s3-website-ap-southeast-2.amazonaws.com
+ its integrated with backend and fully functional.
+ Use only http as for https ,we need custom domain purcahse and SSL.[Future consideration]
 
-## Available Scripts
+
+# Getting Started for LOCAL  setup
+
+This project was bootstrapped with Create React App
+
+
+##PreRquisite
+
+ Node.js v22.9.0 should be installed
+ The backend and mogodb(local/cloud hoisted) should be running.
+ Refer https://github.com/saurabhbiswas/EasyBackend README for the same.
+
+ ## ENV FILE 
+ In .env.development file,point to correct Backend nestjs url
+
+ REACT_APP_BASE_URL=http://localhost:3001
+
+
+## Install dependencies
 
 In the project directory, you can run:
+
+### `npm install`
+
+
+## Run the App
 
 ### `npm start`
 
@@ -12,12 +38,11 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
-You will also see any lint errors in the console.
+
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -27,20 +52,23 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+##App Highlights
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###CI/CD pipeline 
+It is created.[.githhub/workflows/main.yml].
+On each push to main,App is deployed in S3 bucket.
+Githhub Repository secret is used for 
+AWS_ACCESS_KEY_ID
+AWS_REGION
+AWS_SECRET_ACCESS_KEY
+REACT_APP_BASE_URL
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###Error handling 
+Server side [succes/error] is shown as Notification
+Client side error is shown as inline error.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+###Aria
+Aria tags are added at appropriate places.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
