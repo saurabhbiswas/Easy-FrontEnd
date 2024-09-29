@@ -93,6 +93,6 @@ tailwind.css classes are sued to make responsive UI.
 
 ### useReducer Hook 
 
-it is used to straemline state management.
+it is used to streamline state management.
 
 
