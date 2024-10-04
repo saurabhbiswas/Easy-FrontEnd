@@ -1,11 +1,4 @@
-# Hoisted APP
 
-## The App is hoisted at 
-
-http://mygablubacket.s3-website-ap-southeast-2.amazonaws.com
-
-### It Is integrated with backend and fully functional.
-Use only http as for https ,we need custom domain purcahse and SSL.[Future consideration]
 
 
 # Getting Started for LOCAL  setup
